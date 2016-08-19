@@ -16,6 +16,9 @@ URL="http://downloads.sourceforge.net/project/bbmap/BBMap_36.20.tar.gz"
 wget ${URL} --quiet --output-document - \
   | tar xzf - --directory /usr/local/
 ln -s /usr/local/bbmap/tadpole.sh /usr/local/bin
+ln -s /usr/local/bbmap/tadpipe.sh /usr/local/bin
+ln -s /usr/local/bbmap/tadwrapper.sh /usr/local/bin
+ln -s /usr/local/bbmap/resources/phix174_ill.ref.fa.gz /usr/local/bin
 
 # Clean up dependencies
 apt-get autoremove --purge --yes ${BUILD}
